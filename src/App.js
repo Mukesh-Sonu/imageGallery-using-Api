@@ -22,9 +22,7 @@ function App() {
         <h1>Loading...</h1>
       ) : (
         <div className="container">
-          <div className="search">
-            <SearchBox searchText={(textSearch) => setText(textSearch)} />
-          </div>
+          <SearchBox searchText={(textSearch) => setText(textSearch)} />
           <div className="img-container">
             {images.map((image) => (
               <ImageCard key={image.id} image={image} />

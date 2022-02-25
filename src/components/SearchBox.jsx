@@ -9,7 +9,7 @@ function SearchBox({ searchText }) {
     setSearch("");
   };
   return (
-    <div className="input-box">
+    <div>
       <form onSubmit={onSubmit}>
         <input
           type="text"
