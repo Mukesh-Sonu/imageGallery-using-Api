@@ -4,16 +4,18 @@ function ImageCard({ image }) {
       <div className="card-outline">
         <img src={image.webformatURL} alt="..." />
         <div className="img-details">
-          <h3>photo by {image.user}</h3>
+          <h5 style={{ color: "#005cff", marginLeft: "80px" }}>
+            photo by {image.user}
+          </h5>
           <ul>
             <li>
-              <strong>Views:{image.views}</strong>
+              <strong>Views: {image.views}</strong>
             </li>
             <li>
-              <strong>Likes:{image.likes}</strong>
+              <strong>Likes: {image.likes}</strong>
             </li>
             <li>
-              <strong>Comments:{image.comments}</strong>
+              <strong>Comments: {image.comments}</strong>
             </li>
           </ul>
         </div>
